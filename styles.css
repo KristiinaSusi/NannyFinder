@@ -1,67 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Bilbo+Swash+Caps&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*------------------- General ------------------*/
+body {
+    font-family: 'Bitter', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #181E35;
+}
+a:hover {
+    text-decoration: none;
+    color: #181E35;
+}
+.content {
+    margin-top: 80px;
+}
+.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bi-star,
+.bi-star-fill,
+.bi-star-half {
+    color: #FFC300;
+}
+h3 {
+    font-family: 'Bitter', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.esimeneRida h4 {
+    text-transform: lowercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
 header {
-    font-family: 'Arial', sans-serif;  
-    padding: 10px 20px;
-    background-image: url('nanny-and-child.jpg');
-    background-size: cover;
-    background-position: center top;
+    font-family: 'Autour One', sans-serif;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
-
+header h1 {
+    font-size: 136px;
+    font-family: 'Bilbo Swash Caps', serif;
+    margin-top: 20px;
+}
+header h2 {
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
 footer {
-    font-family: 'Arial', sans-serif;  
+    width: 100%;
+    font-family: 'Autour One', sans-serif;
+    background-color: #EFEFEF;
+    padding: 5em;
+    position: bottom;
+}
+footer img {
+    width: 100px;
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-info {
+    margin-top: 15px;
 }
 
-h1 {
-    
-    font-size: 2.5em12;                  
-    font-weight: bold;                  
-    color: #ffffff;                            
-    letter-spacing: 2px;                 
-    padding-bottom: 10px;               
-    margin-bottom: 20px;               
-    text-shadow: 2px 2px 2px #444444;   
+
+/*----------------------------------------------*/
+
+
+
+/*------------ Main page content ---------------*/
+.landing header {
+    padding: 20px 40px 360px 40px;
+    height: 700px;
+    background-image: url('img/nanny-child.jpg');
+    background-size: cover;
+    background-position: 0% 15%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+.landing header a {
+    color: #ffffff;
+}
+.logo {
+    align-items: end;
+    margin: 0px 0px 0px auto;
+    text-align: center;
+    padding-right: 10%;
+}
+.slogan {
+    width: 35%;
+    align-items: end;
+    margin: 0px 0px 0px auto;
+    text-align: center;
+    padding-right: 5%;
 }
 
-h3 {
-    font-size: 0.4em;                                    
-    color: #ffffff;                            
-    letter-spacing: 2px;                 
-    padding-bottom: 10px;               
-    margin-bottom: 20px;               
-    text-shadow: 2px 2px 2px #444444;      
-}
-
-.esimeneRida{
+.esimeneRida {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-
-    text-align: end;
-
-}
 .paisNupud {
     display: flex; /* Ensures buttons are side by side */
-    gap: 5px; /* Space between buttons */
+    gap: 20px; /* Space between buttons */
+}
+button {
+    font-family: 'Autour One', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #181E35;
+    color: #FFFFFF;
+}
+#valiKeel {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
+/* Search bar */
 .valikud {
     align-items: center;
     justify-content: space-between;
 }
-
-#price {
-    align-items:end;
+.valikud form {
+    font-family: "Cambria", sans-serif;
+    width: 100%;
 }
 
+/* Carousel sections */
+.landing .container-xl {
+    max-height: 500px;
+    translate: 0px -150px;
+}
+.carousel-container {
+    background-color: #EFEFEF;
+    margin-top: 250px;
+    padding-bottom: 50px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%);
+    width: 2%;
+}
 #cardCarousel {
     overflow: hidden;
 }
-
 .carousel-inner {
     display: flex;
     overflow: auto;
@@ -75,18 +186,98 @@ h3 {
     overflow-x: auto;
     justify-content: space-around;
 }
+
+/* Carousel card */
+#price {
+    align-items: end;
+}
 .card {
     display: inline-block;
     vertical-align: top;
+    width: 18rem;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
-#carousel-control-prev {
-    color:black;
+/* Signup ad */
+.signup-ad {
+    text-align: center;
+    background-color: #181E35;
+    padding: 50px;
 }
-button {
-    font-family: 'Arial', sans-serif;  
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    cursor: pointer;
+.signup-ad h3 {
+    color: #FFFFFF;
 }
+.signup-ad button {
+    padding: 10px 80px;
+}
+/*----------------------------------------------*/
+
+
+/*---------------- Nanny profile ---------------*/
+.nanny-profile {
+    font-family: 'Bitter', sans-serif;
+}
+.nanny-profile section {
+    margin-top: 60px;
+}
+.nanny-profile .row {
+    margin-top: 20px;
+}
+.nanny-profile p {
+    text-align: justify;
+}
+.nanny-profile h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.about img {
+    width: 300px;
+    border-radius: 50%;
+}
+.about th {
+    padding: 0.5rem;
+}
+.about td {
+    padding: 0.5rem;
+}
+.attributes i {
+    float: left;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+/*----------------------------------------------*/
+
+
+/*------------------ Login page ----------------*/
+.login-page header {
+    margin-bottom: 20%;
+}
+
+.login-page form {
+    width: 50%;
+}
+
+.login-page a {
+    font-weight: 600;
+}
+.login-page a:hover {
+    text-decoration: underline;
+}
+/*----------------------------------------------*/
+
+
+/*------------------- Booking ------------------*/
+.booking-page header {
+    margin-bottom: 2%;
+}
+
+.booking-page form {
+    width: 100%;
+}
+
+.divider {
+    height: 100px;
+    background-color: #181E35;
+}
+/*----------------------------------------------*/
