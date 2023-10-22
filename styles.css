@@ -1,0 +1,92 @@
+header {
+    font-family: 'Arial', sans-serif;  
+    padding: 10px 20px;
+    background-image: url('nanny-and-child.jpg');
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+footer {
+    font-family: 'Arial', sans-serif;  
+}
+
+h1 {
+    
+    font-size: 2.5em12;                  
+    font-weight: bold;                  
+    color: #ffffff;                            
+    letter-spacing: 2px;                 
+    padding-bottom: 10px;               
+    margin-bottom: 20px;               
+    text-shadow: 2px 2px 2px #444444;   
+}
+
+h3 {
+    font-size: 0.4em;                                    
+    color: #ffffff;                            
+    letter-spacing: 2px;                 
+    padding-bottom: 10px;               
+    margin-bottom: 20px;               
+    text-shadow: 2px 2px 2px #444444;      
+}
+
+.esimeneRida{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo {
+
+    text-align: end;
+
+}
+.paisNupud {
+    display: flex; /* Ensures buttons are side by side */
+    gap: 5px; /* Space between buttons */
+}
+
+.valikud {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#price {
+    align-items:end;
+}
+
+#cardCarousel {
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: auto;
+}
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.carousel-inner .row {
+    white-space: nowrap;
+    overflow-x: auto;
+    justify-content: space-around;
+}
+.card {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#carousel-control-prev {
+    color:black;
+}
+button {
+    font-family: 'Arial', sans-serif;  
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    cursor: pointer;
+}

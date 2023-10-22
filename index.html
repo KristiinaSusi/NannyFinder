@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanny Finder</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="esimeneRida">
+            <h3>nannyfinder.ee</h3>
+            <div class="paisNupud">
+                <button id="lisaOmaPakkumine">Lisa oma pakkumine</button>
+                <button id="registreeri">Registreeri</button>
+                <button id="logiSisse">Logi sisse</button>
+            </div>
+        </div>
+        <div class="logo">
+            <h1>Nanny Finder</h1>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="valikud">
+                <form class="form-inline"> <!-- Using Bootstrap's inline form layout -->
+            
+                    <!-- Asukoha Dropdown -->
+                    <div class="form-group mb-2"> 
+                        <label for="asukoht" class="sr-only">Asukoht</label> <!-- sr-only hides the label (since it's already in the dropdown), but maintains accessibility -->
+                        <select class="form-control" id="asukoht" name="asukoht"> <!-- form-control styles the dropdown -->
+                            <option value="" disabled selected hidden>Asukoht</option>
+                            <option value="Tallinn">Tallinn</option>
+                            <option value="Tartu">Tartu</option>
+                            <option value="Narva">Narva</option>
+                            <option value="Parnu">Pärnu</option>
+                            <option value="Viljandi">Viljandi</option>
+                        </select>
+                    </div>
+            
+                    <!-- Ajavalik -->
+                    <div class="form-group mb-2 mx-sm-3"> <!-- Added margin for spacing between inputs -->
+                        <label for="paevaeg" class="sr-only">Vali kuupäev ja kellaaeg</label>
+                        <input type="datetime-local" class="form-control" id="paevaeg" name="paevaeg">
+                    </div>
+            
+                    <!-- Vanus -->
+                    <div class="form-group mb-2">
+                        <label for="vanus" class="sr-only">Lapse/Laste vanus</label>
+                        <select class="form-control" id="vanus" name="vanus">
+                            <option value="" disabled selected hidden>Lapse/Laste vanus</option>
+                            <option value=">1">>1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+            
+                    <!-- Search Button -->
+                    <button type="submit" class="btn btn-primary mb-2" id="otsi">Otsi</button> 
+            
+                </form>
+            </div>
+
+            
+        </section>
+
+        <section>
+            <h2>Lapsehoidjad sinu läheduses</h2>
+            <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#cardCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#cardCarousel" data-slide-to="1"></li>
+                    <li data-target="#cardCarousel" data-slide-to="2"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+
+                        
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="klaara.jpg" alt="Klaara">
+                                <div class="card-body">
+                                    <h5 class="card-title">Klaara</h5>
+                                    <p class="price" >Tasu: al 12€/h</p>
+                                
+                                    <p class="card-text">Vanus: 38 </p>
+                                    <p class="card-text">Staaz: 7 aastat </p>
+                                    <p class="card-text">Reiting: * * * * </p>
+                                    <a href="#" class="btn btn-primary">Tutvu</a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="kelly.jpg" alt="Kelly">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kelly</h5>
+                                    <p class="price" >Tasu: al 12€/h</p>
+                                
+                                    <p class="card-text">Vanus: 38 </p>
+                                    <p class="card-text">Staaz: 7 aastat </p>
+                                    <p class="card-text">Reiting: * * * * </p>
+                                    <a href="#" class="btn btn-primary">Tutvu</a>
+                                </div>
+                            </div>  
+                        
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="laura.jpg" alt="Laura">
+                                <div class="card-body">
+                                    <h5 class="card-title">Laura</h5>
+                                    <p class="price" >Tasu: al 12€/h</p>
+                                
+                                    <p class="card-text">Vanus: 38 </p>
+                                    <p class="card-text">Staaz: 7 aastat </p>
+                                    <p class="card-text">Reiting: * * * * </p>
+                                    <a href="#" class="btn btn-primary">Tutvu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <div class="row">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="amanda.jpg" alt="Amanda">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Amanda</h5>
+                                            <p class="price" >Tasu: al 12€/h</p>
+                                
+                                            <p class="card-text">Vanus: 38 </p>
+                                            <p class="card-text">Staaz: 7 aastat </p>
+                                            <p class="card-text">Reiting: * * * * </p>
+                                            <a href="#" class="btn btn-primary">Tutvu</a>
+                                    </div>
+                            </div>
+                    
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="malle.jpg" alt="Malle">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Klaara</h5>
+                                        <p class="price" >Tasu: al 12€/h</p>
+                                
+                                        <p class="card-text">Vanus: 38 </p>
+                                        <p class="card-text">Staaz: 7 aastat </p>
+                                        <p class="card-text">Reiting: * * * * </p>
+                                        <a href="#" class="btn btn-primary">Tutvu</a>
+                                    </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                    
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#cardCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#cardCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Nanny Finder. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script> 
+</body>
+</html>
