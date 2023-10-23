@@ -146,14 +146,24 @@ button:hover {
 }
 
 /* Search bar */
-.valikud {
+.search {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap; 
+    width: 100%;
 }
 .valikud form {
     font-family: "Cambria", sans-serif;
     width: 100%;
+    padding: 20px;
 }
+
+.otsi {
+    display: flex;
+    padding: 10px;
+}
+
 
 /* Carousel sections */
 .landing .container-xl {
@@ -197,6 +207,24 @@ button:hover {
     width: 18rem;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.4);
 }
+
+.card-img-top {
+    object-fit: cover;
+    max-height: 150px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Signup ad */
 .signup-ad {
