@@ -165,6 +165,16 @@ button:hover {
 }
 
 
+#filtrid .form-control {
+    width: fit-content;
+    letter-spacing: 0.5px; 
+    color: rgb(36, 0, 0);
+    background-color: white; 
+    border: 1px solid #4b2626;
+    
+}
+
+
 /* Carousel sections */
 .landing .container-xl {
     max-height: 500px;
@@ -210,6 +220,10 @@ button:hover {
 
 .card-img-top {
     object-fit: cover;
+    
+}
+
+#cardCarousel_daycare .card-img-top {
     max-height: 150px;
 }
 
@@ -292,6 +306,16 @@ button:hover {
 .login-page a:hover {
     text-decoration: underline;
 }
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
 /*----------------------------------------------*/
 
 
