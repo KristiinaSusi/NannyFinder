@@ -14,7 +14,7 @@ function GetMap() {
     map = new Microsoft.Maps.Map("#map", {
         credentials: mapAPIKey,
         center: centerPoint,
-        zoom: 14,
+        zoom: 15,
         mapTypeId: Microsoft.Maps.MapTypeId.road,
         disablePanning: true
     });
@@ -28,7 +28,6 @@ function GetMap() {
 
     let locations = [centerPoint];
     let bounds = Microsoft.Maps.LocationRect.fromLocations(locations);
-    map.setView({ bounds: bounds });
 
 
 }
