@@ -49,7 +49,6 @@ h4 {
 h6 {
     text-transform: uppercase;
     font-weight: 600;
-    margin: 0;
 }
 header {
     font-family: 'Autour One', sans-serif;
@@ -68,6 +67,17 @@ header h2 {
     font-size: 22px;
     font-weight: 100;
     letter-spacing: 4px;
+}
+button {
+    font-family: 'Autour One', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #181E35;
+    color: #FFFFFF;
 }
 footer {
     width: 100%;
@@ -128,17 +138,7 @@ footer img {
     display: flex; /* Ensures buttons are side by side */
     gap: 20px; /* Space between buttons */
 }
-button {
-    font-family: 'Autour One', sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 10px 10px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #181E35;
-    color: #FFFFFF;
-}
+
 #valiKeel {
     width: 50px;
     height: 50px;
@@ -273,6 +273,9 @@ button:hover {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
+.nanny-profile h6 {
+    margin: 0;
+}
 .about img {
     width: 300px;
     border-radius: 50%;
@@ -291,34 +294,6 @@ button:hover {
 /*----------------------------------------------*/
 
 
-/*------------------ Login page ----------------*/
-.login-page header {
-    margin-bottom: 20%;
-}
-
-.login-page form {
-    width: 50%;
-}
-
-.login-page a {
-    font-weight: 600;
-}
-.login-page a:hover {
-    text-decoration: underline;
-}
-
-.form-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-
-/*----------------------------------------------*/
-
-
 /*------------------- Booking ------------------*/
 .booking-page header {
     margin-bottom: 2%;
@@ -331,5 +306,61 @@ button:hover {
 .divider {
     height: 100px;
     background-color: #181E35;
+}
+/*----------------------------------------------*/
+
+
+/*------------ Login, password reset -----------*/
+.login-page header,
+.pw-reset header {
+    margin-bottom: 20%;
+}
+
+.login-page form,
+.pw-reset form {
+    width: 50%;
+}
+
+.login-page a,
+.pw-reset a {
+    font-weight: 600;
+}
+.login-page a:hover,
+.pw-reset a:hover {
+    text-decoration: underline;
+}
+
+.login-page .form-group,
+.pw-reset .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*----------------------------------------------*/
+
+
+/*-------------- Account bookings --------------*/
+.account-bookings h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+#broneeringuRida {
+    border: 2px black solid;
+}
+#broneeringud {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.tableAccent {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#tyhista {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+#tyhista:hover {
+    color: #F9C6BC;
 }
 /*----------------------------------------------*/
