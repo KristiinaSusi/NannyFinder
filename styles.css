@@ -310,6 +310,13 @@ footer img {
 /*----------------------------------------------*/
 
 
+/*--------------- Booking success --------------*/
+#daycareService {
+    width: 100%;
+}
+/*----------------------------------------------*/
+
+
 /*------------ Login, password reset -----------*/
 .login-page header,
 .pw-reset header {
