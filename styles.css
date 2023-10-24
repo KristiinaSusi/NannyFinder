@@ -166,14 +166,40 @@ footer img {
 
 
 #filtrid .form-control {
-    width: fit-content;
+    display: flex;
+    width: 20em;
     letter-spacing: 0.5px; 
     color: rgb(36, 0, 0);
     background-color: white; 
-    border: 1px solid #4b2626;
+    border: 2px solid #4b2626;
+    fill: #FFFFFF;
+    margin: 0;
+    box-shadow: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;
+}
+
+#filtrid select.form-control { 
+    background-color: white;
+    box-shadow: none;
+    border-radius: 0;
+    fill:#FFFFFF;
+}
+
+
+#filtrid .form-group:not(:last-child) { /*Needed to use important to override bootsrap styling*/
+    margin-right: 0 !important; 
+    margin-left: 0 !important; 
     
 }
 
+.form-inline #paevaeg,
+.form-inline #paevaeg::-webkit-inner-spin-button,
+.form-inline #paevaeg::-webkit-calendar-picker-indicator,
+.form-inline #paevaeg::-webkit-clear-button {
+    border-radius: 0 !important;
+}
 
 /* Carousel sections */
 .landing .container-xl {
@@ -208,8 +234,8 @@ footer img {
 }
 
 /* Carousel card */
-#price {
-    align-items: end;
+.price {
+    align-items:flex-end;
 }
 .card {
     display: inline-block;
