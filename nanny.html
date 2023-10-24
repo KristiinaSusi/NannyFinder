@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="styles.css">
+        <script type='text/javascript' src="scripts.js"></script>
+        <script type='text/javascript' 
+            src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AsKWiJorCz4QNCqQNibOvU6U5NvWGxRb6lDNWutx3FyPTT373heQanUGM8NAy3QK' async defer>
+        </script>
     </head>
     <body class="nanny-profile">
         <header>
@@ -203,9 +207,11 @@
                         </div>
                     </div>
                 </div>
-                <div>
+               <!---<div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d852.9081672648477!2d24.753513418075226!3d59.44026387654338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2see!4v1698000536013!5m2!1sen!2see" width="100%" height="550" frameborder="0" style="display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                </div> --> 
+                    <div id="map" style="position:relative;width:max-content;height:400px;">
+                    </div>
             </section>
         </main>
 
