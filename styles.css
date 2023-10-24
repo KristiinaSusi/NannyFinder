@@ -146,24 +146,47 @@ footer img {
 }
 
 /* Search bar */
+
+.valikud {
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
 .search {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
     width: 100%;
+
 }
 .valikud form {
     font-family: "Cambria", sans-serif;
     width: 100%;
     padding: 20px;
+    line-height: 20px;
 }
 
-.otsi {
+.button #otsi {
     display: flex;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #4b2626 ;
+    border-radius: 0;
+    font-size: 12px;
+    height: 40px;
+    padding: 0 10px;
+    
+    margin: 0;
+
 }
 
+
+
+#filtrid .form-control, #otsi {
+    height: 40px; 
+    box-sizing: border-box;
+}
 
 #filtrid .form-control {
     display: flex;
@@ -192,6 +215,7 @@ footer img {
     margin-right: 0 !important; 
     margin-left: 0 !important; 
     
+    
 }
 
 .form-inline #paevaeg,
@@ -199,6 +223,8 @@ footer img {
 .form-inline #paevaeg::-webkit-calendar-picker-indicator,
 .form-inline #paevaeg::-webkit-clear-button {
     border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
 }
 
 /* Carousel sections */
@@ -332,13 +358,6 @@ footer img {
 .divider {
     height: 100px;
     background-color: #181E35;
-}
-/*----------------------------------------------*/
-
-
-/*--------------- Booking success --------------*/
-#daycareService {
-    width: 100%;
 }
 /*----------------------------------------------*/
 
