@@ -167,21 +167,22 @@ footer img {
     line-height: 20px;
 }
 
-.button #otsi {
+/*Had to define all this inline to override the bootstrap design*/
+/*button .btn .btn-primary#otsi {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #4b2626 ;
+    border: 2px solid #4b2626;
+    background-color: #181E35;
+    color: #FFFFFF;
     border-radius: 0;
     font-size: 12px;
     height: 40px;
-    padding: 0 10px;
-    
+    padding: .375rem .75rem;
     margin: 0;
+    font-weight: 400;
 
-}
-
-
+}*/
 
 #filtrid .form-control, #otsi {
     height: 40px; 
