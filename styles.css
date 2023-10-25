@@ -274,8 +274,28 @@ footer img {
 .card {
     display: inline-block;
     vertical-align: top;
+    align-items: center;
     width: 18rem;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+    
+}
+
+.reiting {
+    display: flex;
+    align-items: center;
+}
+
+.reiting p, .reiting i {
+    margin: 0;   
+    vertical-align: middle; 
+}
+
+.reiting p {
+    margin-right: 5px; 
+}
+
+.card #cardCarousel_daycare{
+    text-align: center;
 }
 
 .card-img-top {
@@ -284,7 +304,7 @@ footer img {
 }
 
 #cardCarousel_daycare .card-img-top {
-    max-height: 150px;
+    max-height: 170px;
 }
 
 .card-title {
@@ -299,6 +319,30 @@ footer img {
     justify-content: center;
 }
 
+.opened {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.row #hoiud {
+    font-size: 13px;
+    flex: 1;
+
+}
+
+.cardBody {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
 /* Signup ad */
 .signup-ad {
@@ -351,6 +395,16 @@ footer img {
     font-size: 2rem;
     margin-right: 1rem;
 }
+
+table.table-borderless h6 {
+    margin: 0;
+}
+
+table.table-borderless th, table.table-borderless td {
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
 /*----------------------------------------------*/
 
 
