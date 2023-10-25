@@ -96,6 +96,13 @@ footer img {
     margin-top: 15px;
 }
 
+#logo { /*So it would not be possible to select logo / slogan text */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+}
+
 
 /*----------------------------------------------*/
 
