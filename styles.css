@@ -269,7 +269,8 @@ footer img {
 
 /* Carousel card */
 .price {
-    align-items:flex-end;
+    text-align: right;
+    font-size: 14px;
 }
 .card {
     display: inline-block;
@@ -342,6 +343,7 @@ footer img {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-top: 20px;
 }
 
 /* Signup ad */
